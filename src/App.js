@@ -39,7 +39,7 @@ function App() {
 
   return (
     <>
-      <ul data-testid="repository-list">
+      <ul aria-label="repository-list">
         {repositories.map(repository => (
           <Repository key={repository.id} id={repository.id} title={repository.title}>
             <RemoveButton id={repository.id} handler={handleRemoveRepository}/>
